@@ -1,20 +1,20 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import AddCardForm from '../components/AddCardForm'
+import React from 'react';
+import PropTypes from 'prop-types';
+import AddCardForm from '../components/AddCardForm';
 
 class Board extends React.Component {
   static propTypes = {
     index: PropTypes.number,
     name: PropTypes.string,
-  }
+  };
 
   handleDrop = e => {
-    e.preventDefault()
-    console.log('dropping...')
-  }
+    e.preventDefault();
+    console.log('dropping...');
+  };
 
   render() {
-    const { index, name } = this.props
+    const { index, name } = this.props;
     return (
       <div
         className="board"
@@ -33,8 +33,8 @@ class Board extends React.Component {
 
         <AddCardForm boardIndex={index} />
       </div>
-    )
+    );
   }
 }
 
-export default Board
+export default Board;

@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class AddCardForm extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       inputValue: '',
-    }
+    };
   }
 
   handleSubmit = e => {
-    e.preventDefault()
-    console.log('submitting...')
-    this.setState({ inputValue: '' })
-  }
+    e.preventDefault();
+    console.log('submitting...');
+    this.setState({ inputValue: '' });
+  };
 
   render() {
     return (
@@ -42,6 +42,6 @@ export default class AddCardForm extends Component {
           +
         </button>
       </form>
-    )
+    );
   }
 }
